@@ -283,6 +283,7 @@ if(isset($_POST['key'])) {
 						<p>JAR File</p>
 						<select id="server-jar">
 							<?php
+							echo $user['home'];
 								$jars = scandir($user['home']);
 								foreach($jars as $file) {
 									if(substr($file, -4) == '.jar') {
